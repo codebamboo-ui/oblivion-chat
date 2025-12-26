@@ -2,6 +2,13 @@ import { DeployFunction } from "hardhat-deploy/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
+  if (hre.network.name === "sepolia" && !process.env.PRIVATE_KEY) {
+    throw new Error("Missing PRIVATE_KEY in .env for Sepolia deployment");
+  }
+  if (hre.network.name === "sepolia" && !process.env.INFURA_API_KEY) {
+    throw new Error("Missing INFURA_API_KEY in .env for Sepolia deployment");
+  }
+
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
