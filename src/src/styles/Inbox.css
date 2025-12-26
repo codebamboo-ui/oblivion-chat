@@ -1,0 +1,58 @@
+.inbox-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.empty {
+  margin-top: 1rem;
+  color: #6b7280;
+}
+
+.message-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.message-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+  background: #ffffff;
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.message-body {
+  margin-top: 0.75rem;
+}
+
+.ciphertext {
+  word-break: break-word;
+  color: #111827;
+}
+
+.plaintext {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-weight: 650;
+  color: #111827;
+}
+
+.message-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+

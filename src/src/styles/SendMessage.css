@@ -1,0 +1,123 @@
+.panel {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.panel-subtitle {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+}
+
+.field {
+  margin-top: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.35rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 6.5rem;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.12);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.button.primary {
+  border-color: #111827;
+  background: #111827;
+  color: white;
+}
+
+.status {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  color: #374151;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.85rem;
+}
+
+.hint {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.hint.error {
+  color: #b91c1c;
+}
+
+.notice {
+  margin-top: 1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.notice.warning {
+  border-color: #fde68a;
+  background: #fffbeb;
+}
+
+.notice.error {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #7f1d1d;
+}
+

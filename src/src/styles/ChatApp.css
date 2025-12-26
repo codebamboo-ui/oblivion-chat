@@ -1,0 +1,46 @@
+.chat-app {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.chat-main {
+  padding: 1.25rem 1rem 2.5rem;
+}
+
+.chat-shell {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.tab-navigation {
+  margin: 1rem 0 1.25rem;
+}
+
+.tab-nav {
+  display: inline-flex;
+  gap: 0.25rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 0.25rem;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  padding: 0.55rem 0.9rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #374151;
+}
+
+.tab-button.active {
+  background-color: #111827;
+  color: white;
+}
+
+.tab-button.inactive:hover {
+  background-color: #f3f4f6;
+}
+
